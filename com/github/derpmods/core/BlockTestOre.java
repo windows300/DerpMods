@@ -2,6 +2,7 @@ package com.github.derpmods.core;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BlockTestOre extends Block {
@@ -19,6 +20,9 @@ public class BlockTestOre extends Block {
 		 * nammed the same.
 		*/
 		this.setUnlocalizedName(this.name);
+		
+		// Set the creative tab for this Block
+		this.setCreativeTab(CreativeTabs.tabBlock);
 		
 		// Register this block with Minecraft.
 		GameRegistry.registerBlock(this, this.name);
