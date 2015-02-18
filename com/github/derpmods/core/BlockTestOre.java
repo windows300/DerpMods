@@ -2,13 +2,14 @@ package com.github.derpmods.core;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BlockTestOre extends Block {
 
 	// This is not what the user see's as the name. It's what Minecraft see's it as
-	public final String name = "testOre";
+	public static final String name = "testOre";
 	
 	BlockTestOre() {
 		
